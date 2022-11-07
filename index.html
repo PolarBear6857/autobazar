@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.esm.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
     <title>AUTOBAZAR</title>
 </head>
 <body>
@@ -12,7 +14,15 @@
   <h3>AUTOBAZAR</h3>
   <nav class="navbar navbar-expand-lg navbar-dark bg-black text-white" style="padding: 1%">
     <a class="nav-link me-3" href="index.html">Domů</a>
+      <button type="button" class="btn btn-primary position-relative bg-black text-white me-4">Nabídka<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">NEW<span class="visually-hidden">unread messages</span></span></button>
     <a class="nav-link me-3" href="#nabidka">Nabídka aut</a>
+      <div class="dropdown me-3">
+          <button class="btn bg-black text-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Další</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Nabídky práce</a></li>
+              <li><a class="dropdown-item" href="#">Smluvní podmínky</a></li>
+          </ul>
+      </div>
   </nav>
 </header>
 <main>
@@ -69,11 +79,21 @@
     <br>
     <br>
     <br>
+    <!--LIST GROUP-->
     <p id="nabidka">Nabídka aut</p>
     <div class="list-group">
         <button type="button" class="list-group-item list-group-item-action">Škoda Yeti</button>
         <button type="button" class="list-group-item list-group-item-action">Škoda Octavia</button>
         <button type="button" class="list-group-item list-group-item-action">Škoda Rapid Spaceback</button>
+    </div>
+<br>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/bruh%20moment.JPG" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Auta</h5>
+            <p class="card-text">Najdeš tady auta</p>
+            <a href="#" class="btn btn-primary">Nabídka aut</a>
+        </div>
     </div>
 </main>
 <footer>
